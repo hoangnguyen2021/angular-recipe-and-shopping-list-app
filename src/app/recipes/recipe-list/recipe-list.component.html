@@ -1,0 +1,13 @@
+<div class="my-3">
+    <button type="button"
+        class="px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        New Recipe
+    </button>
+</div>
+
+<div class="bg-white shadow overflow-hidden sm:rounded-md my-3">
+    <ul role="list">
+        <app-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe">
+        </app-recipe-item>
+    </ul>
+</div>
